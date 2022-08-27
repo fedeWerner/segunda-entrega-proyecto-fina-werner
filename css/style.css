@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+
+.fondoNav {
+    background-color: rgb(163, 232, 117) !important;
+    
+}
+
+.fondoNav :hover{
+    color: crimson;
+}
+
+
+.section-2 {
+    display: grid;
+    background-color: beige;
+    justify-items: center;
+    overflow: auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.section-2 div{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+justify-items: center;
+align-items: center;
+text-align: center
+}
+
+.section-2 p{
+    text-align: center;
+}
+
+.grid-container img{
+    display: grid;
+    grid-template-rows: auto;
+    margin: 10px;
+
+}
+
+
+.section-3{
+    display: grid;
+    grid-template-columns: auto;
+    background-color: rgb(153, 229, 225);
+    overflow: auto;
+    text-align: center;
+}
+
+.section-3 p {
+    margin-top: 10px;
+}
+
+.section-3 form{
+    margin: 10px;
+}
+
+.section-3{
+    min-height: 100%;
+    min-width: 100%;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    background-image: linear-gradient(to right, rgb(255, 255, 0), rgb(183, 79, 10));
+}
+
+.footer ul{
+    list-style: none;
+    display: flex;
+}
+
+.footer img:hover{
+    transform: skew(10deg);
+    transition: 3s;
+}
+
+.footer li{
+    margin: 2px;
+}
+
+.footer{
+    min-height: 100%;
+    min-width: 100%;
+}
+
+
+/* Tablet */
+@media (max-width: 760px){
+    .section-2 {
+        display: grid;
+        background-color: beige;
+        justify-items: center;
+        overflow: auto;
+    }
+    .section-2 div{
+        display: grid;
+        grid-template-columns: auto;
+        justify-items: center;
+        align-items: center;
+        }
+        .section-2 p{
+            text-align: center;
+        }    
+        
+        .section-3{
+    display: grid;
+    grid-template-columns: auto;
+    overflow: auto;
+    text-align: center;
+    }
+    .section-3 p {
+        margin-top: 10px;
+    }
+    
+    .section-3 form{
+        margin: 10px;
+    }
+
+    }
+
+    
+    @media (max-width: 450px){    
+    
+    .section-2 {
+        display: grid;
+        background-color: beige;
+        justify-items: center;
+        overflow: auto;
+    }
+    .section-2 div{
+        display: grid;
+        grid-template-columns: auto;
+        justify-items: center;
+        align-items: center;
+        }
+        .section-2 p{
+            text-align: center;
+        }
+
+   .section-3{
+       display: grid;
+       grid-template-columns: auto;
+       overflow: auto;
+       text-align: center;
+        }
+
+        .section-3 p {
+            margin-top: 10px;
+        }
+        
+        .section-3 form{
+            margin: 10px;
+        }
+        
+        .footer li img{
+            max-width: 80%;
+        }
+
+    }
